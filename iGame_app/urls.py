@@ -15,5 +15,4 @@ urlpatterns = [
     path('games/find_game', views.search_games),
     path('games/favorite', views.favorite_game),
     path('games/add_note', views.add_note),
-
 ]
