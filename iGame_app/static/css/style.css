@@ -19,3 +19,16 @@ body {
   display: block;
   margin: 10px 0;
 }
+
+.nav-container {
+  width: 100%;
+}
+
+.welcome-msg {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.container .details {
+  color: red;
+}
