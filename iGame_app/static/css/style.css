@@ -32,3 +32,17 @@ body {
 .container .details {
   color: red;
 }
+
+#add-game-btn {
+  margin-top: 20px;
+  background: blue;
+  color: yellow;
+  width: 70px;
+  height: 30px;
+  border: 2px solid black;
+}
+
+#add-game-btn:hover {
+  color: white;
+  background: green;
+}

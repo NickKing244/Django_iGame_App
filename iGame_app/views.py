@@ -76,10 +76,13 @@ def render_account_page(request):
         return render(request, 'account.html', context)
 
 def render_add_game(request):
+    context = {
+        'user': User.objects.get(id=request.session['userid'])
+    }
     if 'userid' not in request.session:
         return redirect("/")
     else:
-        return render(request, 'add_game.html')
+        return render(request, 'add_game.html', context)
 
 # Add Game Page
 
@@ -93,11 +96,6 @@ def create_game(request):
     else:
         Game.objects.create(title=request.POST['title'], developer=request.POST['developer'], publisher=request.POST['publisher'], genre=request.POST['genre'], summary=request.POST['summary'], release_date=request.POST['release_date'], platform=request.POST['platform'])
         return redirect('/games/dashboard')
-
-# Details Page
-
-def add_note(request):
-    pass
 
 # Account Page
 
