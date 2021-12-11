@@ -1,6 +1,8 @@
 body {
-  background: gray;
+  /* background: gray; */
   color: yellow;
+  background: url(https://blog.hyperiondev.com/wp-content/uploads/2018/08/Video-Games-Blog.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 /* Login/Registration */
